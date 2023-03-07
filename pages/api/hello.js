@@ -10,5 +10,5 @@ export default async(req, res) => {
     database_id: process.env.NOTION_DATABASE_ID
   });
 
-  res.status(200).json({ response })
+  res.status(200).json({ results: response.results })
 }
