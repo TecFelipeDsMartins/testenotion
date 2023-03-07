@@ -23,6 +23,8 @@ export default function Home() {
           <li key={item.id}>
             <h2>{item.properties.question.title[0].plain_text}</h2>
             <p>{item.properties.basicAnswer.rich_text[0].plain_text}</p>
+            <br/>
+            <p>{item.properties.advancedAnswer.rich_text[0].plain_text}</p>
           </li>
         ))}
     </div>
